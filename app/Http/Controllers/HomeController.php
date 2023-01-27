@@ -25,8 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users=User::where('role','1')->count();
-        $clients=User::where('role','0')->count();
+        $users=User::where('role','0')->count();
+        $clients=User::where('role','1')->count();
         $projects=Project::count();
         $tasks=task::count();
         return view('home')
