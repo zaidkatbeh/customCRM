@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 
-<div class="container-sm" style="text-align: center;background-color:white;width:45%;border-radius:20px;padding-bottom:65px">
+<div class="container-sm" style="text-align: center;background-color:white;width:45%;border-radius:20px;padding-bottom:65px;min-width: fit-content;">
  <h1>edit a project</h1>
  <form action="{{URL('projects/').'/'.$project->id.'/update'}}" method="POST">
     <div class="form-group row">

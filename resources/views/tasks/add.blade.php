@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 
-<div class="container-sm" style="text-align: center;background-color:white;width:45%;border-radius:20px;padding-bottom:65px">
+<div class="container-sm" style="text-align: center;background-color:white;width:45%;border-radius:20px;padding-bottom:65px;min-width: fit-content;">
  <h1>Add A Task</h1>
  <form action="{{URL('tasks/store')}}" method="POST">
     <div class="form-group row">

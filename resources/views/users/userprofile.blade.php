@@ -3,7 +3,7 @@
     (corrent)
 @endsection
 @section('content')
-<div class="container-sm" style="text-align: center;background-color:white;width:45%;border-radius:20px">
+<div class="container-sm" style="text-align: center;background-color:white;width:45%;border-radius:20px;min-width: fit-content;">
     <h1>User Account</h1>
     <br><br>
     <form method="POST" action="{{route('users').'/'.Auth::user()->id.'/update'}}">
