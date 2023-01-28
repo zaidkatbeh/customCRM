@@ -4,7 +4,7 @@
     (corrent)
 @endsection
 @section('content')
-<div class="container" style="text-align: center;background-color:white;border-radius:20px;padding-bottom: 67px;min-width: fit-content;;">
+<div class="container" style="text-align: center;background-color:white;border-radius:20px;padding-bottom: 67px;min-width: fit-content;">
  <h1 >all clients</h1>
  <br><br>
  <table class="table">
