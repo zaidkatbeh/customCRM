@@ -78,10 +78,10 @@ class projectsController extends Controller
      */
     public function edit($projectID)
     {
-        $project=Project::where('id',$projectID)->with('client')->with('users')->select('client_id','id','name')->get()->first();
+        $project=Project::where('id',$projectID)->with('tasks')->with('client')->with('users')->select('client_id','id','name')->get()->first();
+        // dd($project->toArray());
         $clients=User::where('role',1)->get();
         $users=User::where('role',0)->get();
-        // dd($project->toArray());
         return view('projects.projectview')->with('project',$project)->with('clients',$clients)->with('users',$users);
     }
 
@@ -95,7 +95,7 @@ class projectsController extends Controller
     public function update(projectInsert $request,$projectID)
     {
         $project=Project::where('id',$projectID)->get()->first();
-        // dd($request->toArray());
+        dd($request->toArray());
         $project->client_id=$request['client'];
         $project->name=$request['name'];
         $project->save();

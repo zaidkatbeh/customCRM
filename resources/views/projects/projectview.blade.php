@@ -63,6 +63,25 @@
    {{$error}}
  </div>
  @endforeach
+ <table class="table">
+    <thead>
+        <tr>
+          <th scope="col">Task Id</th>
+          <th scope="col">Project Name</th>
+          <th scope="col">Show Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach ($project->tasks as $task)
+            
+        @endforeach
+        <tr>
+            <td class="row">{{$task->id}}</td>
+            <td class="">{{$task->name}}</td>
+            <td><a href="{{route('tasks')."/".$task->id}}"><button type="button" class="btn btn-primary">Show Details</button></a></td>
+        </tr>
+      </tbody>
+ </table>
 </div>
 
 @endsection

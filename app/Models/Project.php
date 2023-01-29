@@ -27,4 +27,8 @@ class Project extends Model
    {
     return $this->hasmany(project_user::class,'project_id','id')->select('id','project_id','user_id');
    }
+   public function tasks()
+   {
+    return $this->hasMany(task::class);
+   }
 }
