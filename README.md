@@ -21,4 +21,4 @@ an admin panel to manage clients,users,projects and tasks
 - register
 
 ## ScreenShots
-![register](/ScreenShots/register.pngscreen?raw=true "register")
+![register](ScreenShots/register.pngscreen?raw=true "register")
