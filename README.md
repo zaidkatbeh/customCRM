@@ -23,3 +23,8 @@ an admin panel to manage clients,users,projects and tasks
 ## ScreenShots
 ![register](/../main/ScreenShots/register.png?raw=true "register")
 ![register](/../main/ScreenShots/login.png?raw=true "register")
+![register](/../main/ScreenShots/mian.png?raw=true "register")
+![register](/../main/ScreenShots/view_all_clients.png?raw=true "register")
+![register](/../main/ScreenShots/view_all_projects.png?raw=true "register")
+![register](/../main/ScreenShots/view_all_users?raw=true "register")
+![register](/../main/ScreenShots/register.png?raw=true "register")
